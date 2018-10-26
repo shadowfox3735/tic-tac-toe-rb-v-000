@@ -109,8 +109,8 @@ end
 end
 
 def play(board)
-  turn_count(board) == 9until 
-  if won?(board)
+  if over?(board)
+    if won?(board)
     puts "Congratulations #{winner(board)}!"
     break
   else if draw?(board)
