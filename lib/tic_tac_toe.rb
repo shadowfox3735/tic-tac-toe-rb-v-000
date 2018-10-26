@@ -112,8 +112,10 @@ def play(board)
   until turn_count(board) == 9
   if won?(board)
     puts "Congratulations #{winner(board)}!"
+    break
   else if draw?(board)
     puts "Cat\'s Game!"
+    break
   else
     turn(board)
   end
