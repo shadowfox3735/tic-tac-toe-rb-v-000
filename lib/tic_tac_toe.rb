@@ -118,5 +118,6 @@ def play(board)
   end
   else
     turn(board)
+    play(board)
   end
 end
